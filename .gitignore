@@ -119,10 +119,16 @@ shots/
 chat-shots/
 
 # =============================================================
-# Editor / OS files
+# Planning / documentation markdown (kept locally, not pushed)
 # =============================================================
-.vscode/*
-!.vscode/mcp.json
+*.md
+!README.md
+
+# =============================================================
+# Editor / tooling config (kept locally, not pushed)
+# =============================================================
+.roo/
+.vscode/
 .idea/
 *.swp
 *.swo
