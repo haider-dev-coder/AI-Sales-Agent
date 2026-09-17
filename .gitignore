@@ -1,0 +1,141 @@
+# =============================================================
+# Secrets and credentials — NEVER commit these
+# =============================================================
+.env
+.env.*
+!.env.example
+*.env
+!*.env.example
+google-credentials.json
+*credentials*.json
+!docker/init-db.sql
+service-account*.json
+
+# =============================================================
+# Python
+# =============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+.python-version
+
+# Test / lint / type-check caches
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+hypothesis/
+
+# =============================================================
+# Node / frontend
+# =============================================================
+node_modules/
+.npm
+.yarn/
+.pnp.*
+.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# Frontend build output
+frontend/dist/
+frontend/build/
+frontend/.vite/
+dist-ssr/
+*.local
+
+# =============================================================
+# Logs and runtime output (local dev runs)
+# =============================================================
+*.log
+logs/
+start_out.log
+uvicorn_out.log
+uvicorn_err.log
+vite_dev.log
+backend/start_out.log
+backend/uvicorn_out.log
+backend/uvicorn_err.log
+frontend/vite_dev.log
+
+# =============================================================
+# Crawler / KB generated artifacts (regenerated at runtime)
+# =============================================================
+backend/crawler/output/
+backend/app/crawler/output/
+backend/data/sitemap.json
+data/sitemap.json
+data/processed/*
+!data/processed/.gitkeep
+data/raw/*
+!data/raw/.gitkeep
+
+# =============================================================
+# Local diagnostic scratch scripts (not part of the app)
+# =============================================================
+backend/tmp_*.py
+backend/diagnose_*.py
+
+# =============================================================
+# Verification screenshots (local QA evidence, not source)
+# =============================================================
+shots/
+chat-shots/
+
+# =============================================================
+# Editor / OS files
+# =============================================================
+.vscode/*
+!.vscode/mcp.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =============================================================
+# Misc
+# =============================================================
+*.sqlite3
+*.db
+.cache/
+tmp/
+temp/

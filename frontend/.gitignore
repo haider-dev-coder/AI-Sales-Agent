@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+.vite/
+
+# Local env (frontend runtime config)
+.env
+.env.*
+!.env.example
+
+# Local dev logs
+*.log
+vite_dev.log

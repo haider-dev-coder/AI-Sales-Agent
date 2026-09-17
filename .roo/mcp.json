@@ -1,0 +1,14 @@
+{
+	"mcpServers": {
+		"browsermcp": {
+			"command": "npx",
+			"args": [
+				"@browsermcp/mcp@latest"
+			],
+			"disabled": false,
+			"alwaysAllow": [
+				"browser_snapshot"
+			]
+		}
+	}
+}

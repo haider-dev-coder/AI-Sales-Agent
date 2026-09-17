@@ -1,0 +1,19 @@
+# Python virtualenv / caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local runtime logs and PID/scratch files
+*.log
+start_out.log
+uvicorn_out.log
+uvicorn_err.log
+tmp_*.py
+diagnose_*.py
+
+# Generated crawler/KB artifacts (regenerated at runtime)
+crawler/output/
+app/crawler/output/
